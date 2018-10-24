@@ -1,0 +1,7 @@
+add_executable(something something_test.cpp)
+add_executable(other other_test.cpp)
+include_directories(../src /usr/local/include)
+target_link_libraries(something core)
+target_link_libraries(other core)
+add_test(something_test COMMAND ./something)
+add_test(other_test COMMAND ./other)

@@ -1,0 +1,3 @@
+add_library(core OBJECT something.cpp other.cpp)
+add_executable(tutorial main.cpp)
+target_link_libraries(tutorial core)
